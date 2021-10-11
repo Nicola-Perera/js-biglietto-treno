@@ -9,11 +9,11 @@ const discount_over65 = 0.6;
 alert('Benvenuto! Creiamo insieme il biglietto adatto a te');
 
 // richiesta percorso all'utente
-let trip_distance = parseInt(prompt('Quanti chilometri devi percorrere?'));
+let trip_distance = parseFloat(prompt('Quanti chilometri devi percorrere?'));
 console.log(trip_distance);
 
 // richiesta età dell'utente
-let user_age = parseInt(prompt('Quanti anni hai?'));
+let user_age = parseFloat(prompt('Quanti anni hai?'));
 console.log(user_age);
 
 // creazione biglietto
@@ -32,6 +32,7 @@ else {
     final_price = full_price;
 }
 
-console.log(final_price);
+
+console.log((final_price).toFixed(2));
 
 
