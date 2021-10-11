@@ -20,4 +20,18 @@ console.log(user_age);
 let full_price = trip_distance * price_per_km;
 console.log(full_price);
 
+// applicazione sconti
+let final_price;
+if (user_age < 18) {
+    final_price = full_price * discount_under18;
+}
+else if (user_age > 65) {
+    final_price = full_price * discount_over65;
+}
+else {
+    final_price = full_price;
+}
+
+console.log(final_price);
+
 
