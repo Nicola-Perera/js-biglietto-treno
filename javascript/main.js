@@ -16,3 +16,8 @@ console.log(trip_distance);
 let user_age = parseInt(prompt('Quanti anni hai?'));
 console.log(user_age);
 
+// creazione biglietto
+let full_price = trip_distance * price_per_km;
+console.log(full_price);
+
+
